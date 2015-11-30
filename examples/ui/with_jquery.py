@@ -18,7 +18,7 @@ class DatePicker(ui.Widget):
             """ $(node).datepicker(); // we cannot use $ as a variable name in PyScript
             """
 
-
+@app.serve
 class Example(ui.Widget):
     
     def init(self):
@@ -46,5 +46,4 @@ class Example(ui.Widget):
 
 
 if __name__ == '__main__':
-    app.launch(Example)
-    app.run()
+    app.start()
